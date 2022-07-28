@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React from 'react';
+import Navbar from './layouts/Navbar';
+// import Footer from './layouts/Footer';
+import Recipe from './components/Recipe';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar/>
+      <div style={{height:"80vh"}} className="container my-2 mx-2">
+        <Recipe/>
+      </div>
+    {/* <Footer/> */}
+    </>
   );
 }
 
